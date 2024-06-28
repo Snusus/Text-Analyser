@@ -1,0 +1,192 @@
+/* MainPage.css */
+body {
+  background: linear-gradient(135deg, #10110f, #121b1b, #111313, #152020);
+  color: #ecf0f1;
+}
+
+textarea {
+  width: 60%;
+  height: 25cap;
+  margin-top: 2%;
+  margin-left: 20%;
+  font-size: 14px;
+  padding: 5px+0.5%;
+  background: #1c2929;
+  /* Цвет текстового поля */
+  color: #ecf0f1;
+  /* Цвет текста в поле */
+  resize: none;
+  border: 1px solid #0b1111;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  /* Плавный переход цвета обводки */
+}
+
+textarea:focus {
+  border: 1px solid #7d8819;
+  /* Цвет обводки при фокусе */
+  outline: none;
+  /* Убирает стандартное выделение */
+  box-shadow: 0 0 2px 0px #016d01, 0 0 4px 1px #84a50c;
+  /* Градиентная обводка */
+}
+
+.symbol-counter {
+  background: #0b1111;
+  margin-bottom: 1%;
+  font-size: 14px;
+  margin-right: 20%;
+  margin-left: 73.8%;
+  padding: 0.4%;
+  border-radius: 4px;
+  width: 4.7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Центрирование текста */
+}
+
+
+button {
+  background: linear-gradient(145deg, #025a02, #335e03);
+  color: #ecf0f1;
+  border: 2px solid #2c3e50; /* Обводка кнопки */
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: background 0.3s, transform 0.1s; /* Плавный переход для фона и анимация нажатия */
+}
+
+button:hover {
+  background: linear-gradient(145deg, #013a01, #223d02);
+  border: 2px solid #287515; /* Обводка кнопки */
+}
+
+button:active {
+  border: 2px solid #5ca816; /* Обводка кнопки */
+  transform: scale(0.95); /* Анимация нажатия */
+  background: linear-gradient(145deg, #023102, #1e3502); 
+}
+
+.check-button {
+  color: #ecf0f1;
+  margin-left: 20%;
+  padding: 0.6%;
+  cursor: pointer;
+}
+
+.save-button {
+  color: #ecf0f1;
+  padding: 0.6%;
+  cursor: pointer;
+}
+
+.upgrade-button {
+  color: #ecf0f1;
+  margin-right: 20%;
+  padding: 0.6%;
+  cursor: pointer;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-column {
+  width: 48%;
+}
+
+.result-box {
+  background-color: #34495e;
+  /* Цвет плашек */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #2c3e50;
+  /* Цвет рамки плашек */
+}
+
+.header-main {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: #0b1111;
+  padding: 0.3%;
+  height: 4cap;
+  text-align: center;
+  color: #ecf0f1;
+  width: 100%;
+}
+
+.footer-main {
+  justify-content: space-between;
+  align-items: center;
+  background: #0b1111;
+  height: 3cap;
+  padding: 0.6%;
+  text-align: center;
+  color: #ecf0f1;
+  width: 100%;
+}
+
+.actions-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions-wrapper-articles {
+  display: flex;
+  align-items: center;
+}
+
+.text-block {
+  background: #0b1111;
+  height: 100%;
+  width: 20%;
+  min-width: 10cap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2%;
+  border-radius: 4px;
+  margin-top: 2%;
+}
+
+.text-field-left {
+  flex: 1;
+  font-size: 16px;
+  background-color: #1c2929;
+  color: #ecf0f1;
+  height: 6cap;
+  border: 1px solid #0b1111;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 5px;
+}
+.text-field-right {
+  flex: 1;
+  font-size: 16px;
+  background-color: #1c2929;
+  color: #ecf0f1;
+  height: 6cap;
+  border: 1px solid #0b1111;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  display: flex; /* Добавлено */
+  justify-content: center; /* Добавлено */
+  align-items: center; /* Добавлено */
+}
+
+.text-field:not(:last-child) {
+  border-right: 1px solid #0b1111;
+}

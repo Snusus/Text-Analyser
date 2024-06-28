@@ -1,0 +1,106 @@
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Темный фон с зеленым оттенком */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.notification {
+  background: linear-gradient(145deg, #010f0f, #090c0b); /* Темный фон уведомления с оттенком */
+  border: 1px solid #022c14; /* Обводка */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Тень */
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #ecf0f1;
+  transform: translateY(-50px); /* Анимация появления */
+  animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.notification-header h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em; /* Уменьшен размер шрифта */
+}
+
+.notification-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+
+.notification-body p {
+  margin: 0;
+  font-size: 1em; /* Уменьшен размер шрифта */
+  flex: 2;
+  text-align: left;
+}
+
+.notification-body .notification-icon {
+  width: 25%; /* Размер иконки */
+  height: 25%; /* Размер иконки */
+  margin-right: 6%; /* Отступ слева от текста */
+}
+
+.notification-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-footer button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.notification-footer button:hover {
+  background-color: #0056b3;
+}
+
+.notification-footer button:active {
+  transform: scale(0.95);
+}
+
+.notification.success {
+  border-left: 5px solid #28a745;
+}
+
+.notification.error {
+  border-left: 5px solid #dc3545;
+}
+
+.notification.info {
+  border-left: 5px solid #17a2b8;
+}
+
+.notification.warning {
+  border-left: 5px solid #ffc107;
+}
